@@ -1,3 +1,350 @@
-.index-title {
-  font-size: 100px;
+.container {
+  max-width: 1200px;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+.w-100 {
+  width: 100%;
+}
+.home-title {
+  padding-top: 80px;
+  padding-bottom: 48px;
+  font-size: 48px;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-align: center;
+}
+.text-white {
+  color: #fff;
+}
+
+// banner
+.banner {
+  background-image: url("../images/home-header.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.banner-content {
+  text-align: right;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .banner {
+    background-image: url("../images/home-header-sm.png");
+  }
+}
+@media (max-width: 575px) {
+  // 原本放前面，但因為會被覆蓋所以放到這來
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  header .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .banner-content {
+    text-align: right;
+    padding-top: 144px;
+    padding-bottom: 144px;
+  }
+  h1 {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+}
+// feature
+.feature {
+  background-color: var(--bg-second-color);
+  padding-bottom: 80px;
+}
+.feature-wrap {
+  justify-content: space-between;
+  padding-left: -12px;
+  padding-right: -12px;
+  li {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.feature-card {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  img {
+    width: 83px;
+    height: 83px;
+    margin-bottom: 24px;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .feature {
+    padding-bottom: 40px;
+  }
+  .feature-wrap {
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .feature-wrap {
+    flex-wrap: wrap;
+    li {
+      width: 100%;
+    }
+  }
+}
+// classic
+.classic {
+  padding-bottom: 80px;
+}
+.classic-wrap {
+  padding-left: -12px;
+  padding-right: -12px;
+  justify-content: space-between;
+  li {
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.classic-card {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  img {
+    margin-bottom: 8px;
+  }
+  h4 {
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: var(--bg-main-color);
+  }
+}
+@media (max-width: 970px) {
+  .classic-wrap {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    li {
+      width: 100%;
+    }
+  }
+  .classic-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 336px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .classic {
+    padding-bottom: 40px;
+  }
+  .classic-card {
+    img {
+      width: 348px;
+    }
+  }
+}
+// designed-glasses
+.designed-glasses {
+  padding-bottom: 80px;
+  background-image: url("../images/index-bg-md.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.designed-wrap {
+  li {
+    width: 50%;
+  }
+}
+.designed-card {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #fff;
+  h4 {
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: var(--bg-main-color);
+  }
+}
+@media (max-width: 767px) {
+  .designed-glasses {
+    background-image: url("../images/index-bg-sm.png");
+  }
+  .designed-wrap {
+    flex-wrap: wrap;
+    gap: 24px;
+    li {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .designed-glasses {
+    padding-bottom: 40px;
+  }
+}
+// customer-review
+.customer-review {
+  padding-bottom: 80px;
+}
+.customer-wrap {
+  padding-left: -12px;
+  padding-right: -12px;
+  justify-content: space-between;
+  li {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.customer-card {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 205px;
+    h6 {
+      font-size: 16px;
+      font-weight: 500;
+      padding-bottom: 8px;
+    }
+    span {
+      font-size: 14px;
+      color: #707070;
+      margin-top: auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .customer-wrap {
+    flex-wrap: wrap;
+    row-gap: 24px;
+    li {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .customer-review {
+    padding-bottom: 40px;
+  }
+  .customer-wrap {
+    row-gap: 16px;
+    li {
+      width: 100%;
+    }
+  }
+}
+// contact
+.contact {
+  background-color: var(--bg-second-color);
+  padding-bottom: 80px;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container {
+  width: 100%;
+  max-width: 636px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  p {
+    font-size: 20px;
+    padding-bottom: 24px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-bottom: 8px;
+  }
+  input,
+  textarea {
+    margin-bottom: 16px;
+    padding: 6px;
+    border: 1px solid #000;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 136px;
+  }
+  .check-item {
+    align-items: start;
+    column-gap: 4px;
+  }
+  .btn-group {
+    padding-top: 48px;
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    width: 60%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .form-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .contact {
+    padding-bottom: 40px;
+  }
+  .form-container {
+    p {
+      font-size: 16px;
+    }
+    .btn-group {
+      padding-top: 24px;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
 }
