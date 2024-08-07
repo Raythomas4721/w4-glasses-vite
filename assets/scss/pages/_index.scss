@@ -73,13 +73,11 @@
   padding-bottom: 80px;
 }
 .feature-wrap {
-  justify-content: space-between;
-  padding-left: -12px;
-  padding-right: -12px;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
   li {
-    width: 25%;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: calc(25% - 24px);
   }
 }
 .feature-card {
@@ -105,7 +103,7 @@
   .feature-wrap {
     flex-wrap: wrap;
     li {
-      width: 50%;
+      width: calc(50% - 24px);
     }
   }
 }
@@ -122,13 +120,11 @@
   padding-bottom: 80px;
 }
 .classic-wrap {
-  padding-left: -12px;
-  padding-right: -12px;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
   li {
-    width: 33.33%;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: calc(33.33% - 24px);
   }
 }
 .classic-card {
@@ -151,7 +147,6 @@
   .classic-wrap {
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     li {
       width: 100%;
     }
@@ -224,13 +219,11 @@
   padding-bottom: 80px;
 }
 .customer-wrap {
-  padding-left: -12px;
-  padding-right: -12px;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 16px;
   li {
-    width: 25%;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: calc(25% - 24px);
   }
 }
 .customer-card {
@@ -263,7 +256,7 @@
     flex-wrap: wrap;
     row-gap: 24px;
     li {
-      width: 50%;
+      width: calc(50% - 24px);
     }
   }
 }
@@ -307,6 +300,7 @@
     margin-bottom: 16px;
     padding: 6px;
     border: 1px solid #000;
+    font-size: 16px;
   }
   textarea {
     resize: vertical;
