@@ -40,6 +40,10 @@
     padding-left: 36px;
     padding-right: 36px;
   }
+  header .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .banner {
     background-image: url("../images/home-header-sm.png");
   }
@@ -49,10 +53,6 @@
   .container {
     padding-left: 14px;
     padding-right: 14px;
-  }
-  header .container {
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .banner-content {
     text-align: right;
@@ -301,6 +301,7 @@
     padding: 6px;
     border: 1px solid #000;
     font-size: 16px;
+    background-color: transparent;
   }
   textarea {
     resize: vertical;
